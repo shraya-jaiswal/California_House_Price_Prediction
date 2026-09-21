@@ -5,3 +5,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 import pandas as pd
 import joblib
 
+print("Loading datasets")
+data=fetch_california_housing()
+
+X=pd.DataFrame(data.data, columns=data.features_name)
