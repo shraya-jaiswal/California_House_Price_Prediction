@@ -11,3 +11,5 @@ data=fetch_california_housing()
 X=pd.DataFrame(data.data, columns=data.feature_name)
 y=data.target
 print(f"Total records:{X.shape[0]}")
+
+X_train, X_test, y_train, y_test= train_test_split(X)
